@@ -1,0 +1,37 @@
+.contacts {
+  padding-top: 45px;
+  background-color: $color;
+}
+.contacts__title {
+  color: $color__basic;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 37px;
+  line-height: $line--l;
+  text-align: center;
+  font-size: $font--l;
+  font-weight: 300;
+}
+.contacts__wrapper {
+  margin-bottom: 24px;
+}
+.contacts__subtitle {
+  font-size: $font--m;
+  line-height: $line;
+  width: 80%;
+  margin: auto;
+  font-weight: 700;
+  color: $color__additional;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.contacts__text {
+  display: block;
+  font-size: $font--l;
+  line-height: $line--l;
+  color: $color__accent;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  text-decoration: none;
+}

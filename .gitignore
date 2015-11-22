@@ -1,0 +1,6 @@
+design/
+node_modules/
+bower_components/
+npm-debug.log
+*.map
+*.css

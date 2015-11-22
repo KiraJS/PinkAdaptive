@@ -1,0 +1,72 @@
+.download {
+  padding-top: 19px;
+}
+.download__title-wrapper {
+  background-image: url("../img/iphone-hand-1.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  min-height: 375px;
+}
+.download__title {
+  color: $color;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: $font--l;
+  line-height: $line--l;
+  font-weight: 300;
+}
+.download__container {
+  background: $color__basic;
+  padding-top: 25px;
+  min-height: 245px;
+
+}
+.download__btn {
+    color: $color;
+    display: block;
+    cursor: pointer;
+    background: $color__basic;
+    font-weight: bold;
+    font-size: $font--m;
+    width:275px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    padding: 12px 0 18px 0;
+    border: solid white 4px;
+    border-radius: 40px;
+}
+.download__link-wrapper {
+  width: 240px;
+  padding-top: 20px;
+  margin: auto;
+  font-size: 0;
+  margin-bottom: 10px;
+}
+.download__link {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  &--ios {
+    background-image: url("../img/apple-logo.svg");
+  }
+  &--android {
+    background-image: url("../img/android-logo.svg");
+  }
+  &--microsoft {
+    background-image: url("../img/microsoft-logo.svg");
+  }
+}
+.download__text{
+  color: $color;
+  font-size: $font;
+  font-weight: 300;
+  line-height: $line--m;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}

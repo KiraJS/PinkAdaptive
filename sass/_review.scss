@@ -1,0 +1,22 @@
+
+.review {
+  padding-top: 10px;
+  margin: 0;
+}
+.review__list {
+  background-image: linear-gradient(175deg, white 15%, white 88%, $color__primary 25%);
+  height: 300px;
+
+}
+.review__title{
+  text-align: center;
+  color: $color__basic;
+  font-size: $font--m;
+  margin-bottom: 15px;
+}
+.review__text{
+  line-height: $line--xl;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}

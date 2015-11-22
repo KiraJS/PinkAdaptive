@@ -1,0 +1,45 @@
+/* Adaptive */
+$tablet: "only screen and (min-width: 700px)";
+$desktop: "only screen and (min-width: 1200px)";
+
+
+/* Retina */
+
+
+/* Цветовая схема */
+//Белый
+$color: #ffffff;
+
+// Черный
+$color__basic: #000000;
+
+// Серый
+$color__primary: #f2f2f2;
+$color__primary--l: #e5e5e5;
+$color__primary--d: #7e868f;
+
+// Синий
+$color__additional: #283645;
+$color__additional--l: rgba(29, 39, 50, 0.7);
+
+// Розовый
+$color__accent: #d22856;
+$color__accent--l: rgba(92, 50, 74, 0.3);
+
+
+/* Шрифты */
+// Размеры
+$font: 14px;
+$font--m: 18px;
+$font--l: 24px;
+$font--xl: 30px;
+$font--xxl: 40px;
+$font--xxxl: 50px;
+
+// Межстрочный интервал
+$line: 18px;
+$line--m: 24px;
+$line--l: 29px;
+$line--xl: 30px;
+$line--xxl: 48px;
+$line--xxxl: 60x;
