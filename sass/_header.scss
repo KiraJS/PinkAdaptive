@@ -1,15 +1,10 @@
 .header {
   min-height: 65px;
+  padding: 0 20px;
+  background: red;
   background-color: $color__additional--l;
   position: relative;
-}
-.header:after{
-  content: '';
-  position: absolute;
-  right: 20px;
-  width: 20px;
-  height: 65px;
-  background-image: url("../img/menu-burger.svg");
-  background-repeat: no-repeat;
-  background-position: right;
+  @media #{$tablet} {
+    min-height: 130px;
+  }
 }

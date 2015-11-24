@@ -14,9 +14,11 @@
   <div class="wrapper  wrapper__bg">
 
     <header class="header  clearfix">
-      <div class="wrapper__ctr">
-        <div class="logo"></div>
+        <div class="logo">
+          <img src="img/logo-1.svg" alt="Pink" width="80" height="25" class="logo__img"></img>
+        </div>
         <nav class="menu">
+          <a href="" class="menu__enter"></a>
           <ul class="menu__list">
             <li class="menu__item">информация
               <a href=""></a>
@@ -32,13 +34,12 @@
             </li>
           </ul>
         </nav>
-      </div>
 
     </header>
 
     <main class="main">
 
-      <div class="download">
+      <div class="download  clearfix">
         <div class="download__title-wrapper">
           <h1 class="download__title">Взгляните на жизнь иначе!</h1>
         </div>
@@ -55,9 +56,9 @@
       <div class="features">
         <div class="features__title-wrapper">
           <h2 class="features__title">Устали от серости мегаполиса?</h2>
-          <h2 class="features__title">Нам есть что вам предложить!</h2>
+          <h2 class="features__title">Нам есть что вам<br> предложить!</h2>
         </div>
-        <ul class="features__list">
+        <ul class="features__list clearfix">
           <li class="features__item">
             <h2 class="features__subtitle">Поднимает настроение</h2>
             <p class="features__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
@@ -73,6 +74,18 @@
         </ul>
       </div>
 
+      <div class="research clearfix">
+        <div class="research__wrapper">
+          <div class="research__clock"><span>24</span></div>
+        </div>
+        <div class="research__wrapper">
+
+          <h2 class="research__title">Эффект<br> на 24 часа!</h2>
+          <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a href="#" class="research__link">Узнать больше об исследовании</a>
+        </div>
+      </div>
+
       <form class="review  slider">
         <div class="slider__container">
           <input type="radio" name="point" id="slide1" checked>
@@ -86,16 +99,22 @@
           <div class="review__list  slider-inner">
             <div class="slider__wrapper  clearfix">
               <div class="review__item  slider__item">
-                <h2 class="review__title  subtitle">Николай Петров</h2>
+                <h2 class="review__title  ">Николай Петров</h2>
                 <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <h2 class="review__title  review__title--tablet ">Николай Петров</h2>
+                <span class="review__caption">25 лет, водитель трамвая</span>
               </div>
               <div class="review__item  slider__item">
-                <h2 class="review__title  subtitle">Пётр Николаев</h2>
+                <h2 class="review__title  ">Пётр Николаев</h2>
                 <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <h2 class="review__title  review__title--tablet ">Пётр Николаев</h2>
+                <span class="review__caption">25 лет, водитель трамвая</span>
               </div>
               <div class="review__item  slider__item">
-                <h2 class="review__title  subtitle">Василий Алексеев</h2>
+                <h2 class="review__title  ">Василий Алексеев</h2>
                 <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <h2 class="review__title  review__title--tablet ">Василий Алексеев</h2>
+                <span class="review__caption">25 лет, водитель трамвая</span>
               </div>
             </div>
           </div>
@@ -116,8 +135,8 @@
             <div class="slider__wrapper  clearfix">
               <div class="product__item  slider__item">
                 <div class="product__header">
-                  <h2 class="product__title">Стандарт</h2>
-                  <p class="product__cost">3,99 USD</p>
+                  <h2 class="product__title">База</h2>
+                  <p class="product__cost">1,99 USD</p>
                 </div>
                 <h2 class="product__option">
                   <span>Розовый фильтр</span>
@@ -146,8 +165,8 @@
               </div>
               <div class="product__item  slider__item">
                 <div class="product__header">
-                  <h2 class="product__title">Стандарт</h2>
-                  <p class="product__cost">3,99 USD</p>
+                  <h2 class="product__title">Анлим</h2>
+                  <p class="product__cost">9,99 USD</p>
                 </div>
                 <h2 class="product__option">
                   <span>Розовый фильтр</span>
@@ -163,8 +182,36 @@
           </div>
         </div>
       </form>
+      <div class="table">
+        <table>
+          <tr>
+            <td class="table__item  table__item--hidden"></td>
+            <td class="table__item">база<span>1,99 USD</span></td>
+            <td class="table__item">стандарт<span>3,99 USD</span></td>
+            <td class="table__item">анлим<span>9,99 USD</span></td>
+          </tr>
+          <tr>
+            <td class="table__description">Pозовый фильтр</td>
+            <td class="table__option"></td>
+            <td class="table__option"></td>
+            <td class="table__option"></td>
+          </tr>
+          <tr>
+            <td class="table__description">Cмайлики</td>
+            <td class="table__option  table__option--no"></td>
+            <td class="table__option"></td>
+            <td class="table__option"></td>
+          </tr>
+          <tr>
+            <td class="table__description">Комментарии</td>
+            <td class="table__option  table__option--no"></td>
+            <td class="table__option  table__option--no"></td>
+            <td class="table__option"></td>
+          </tr>
+        </table>
+      </div>
 
-      <div class="contacts">
+      <div class="contacts clearfix">
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <div class="contacts__wrapper">
           <h2 class="contacts__subtitle">Звоните:</h2>
@@ -176,17 +223,27 @@
         </div>
         <div class="contacts__wrapper">
           <h2 class="contacts__subtitle">Приезжайте в гости:</h2>
-          <p class="contacts__text">Санкт-Петербург, Невский проспект, д. 20</p>
+          <p class="contacts__text">Санкт-Петербург<br>, Невский проспект, д. 20</p>
         </div>
       </div>
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412367!2d30.320894615687433!3d59.93879686904843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1447922989000"
-        width="100%" height="200px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </main>
 
-    <footer class="container">
-
+    <footer class="footer clearfix">
+      <div class=" logo logo--footer">
+          <img src="img/logo-black.svg" alt="Pink" width="80" height="25" class="logo__img"></img>
+      </div>
+      <div class="social">
+        <a href="#" class="social__link  social__link--tw"></a>
+        <a href="#" class="social__link  social__link--fb"></a>
+        <a href="#" class="social__link  social__link--yt"></a>
+      </div>
+      <div class="copyright">
+        <span>Разработано</span>
+      </div>
     </footer>
 
   </div>

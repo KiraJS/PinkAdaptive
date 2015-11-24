@@ -56,7 +56,9 @@
     &--product {
       background-color: $color__primary;
       bottom: -15px;
-
+    }
+    @media #{$tablet} {
+      bottom: 11px;
     }
 }
 

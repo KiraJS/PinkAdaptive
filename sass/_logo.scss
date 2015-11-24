@@ -1,8 +1,29 @@
 .logo {
   width: 50%;
-  height: 65px;
   float: left;
-  background-image: url("../img/logo-1.svg");
-  background-repeat: no-repeat;
-  background-position: left;
+  padding-top: 20px;
+  @media #{$tablet} {
+    padding-top: 43px;
+    background-image: url("../img/glasses-simple@1x.png");
+    background-repeat: no-repeat;
+    background-position: 7% 100%;
+  }
+  &--footer {
+    @media #{$tablet} {
+      background-image: url("../img/glasses-pink.png");
+      background-position: 24% 100%;
+      padding-top: 50px;
+      padding-left: 20px;
+      width: 33%;
+      box-sizing: border-box;
+      float: left;
+    }
+  }
+}
+.logo__img {
+  float: left;
+  margin-left: -3px;
+  @media #{$tablet} {
+    margin-left: 90px;
+  }
 }

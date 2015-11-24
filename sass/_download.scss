@@ -1,11 +1,27 @@
 .download {
   padding-top: 19px;
+  @media #{$tablet} {
+    background-image: url("../img/iphone-hand-2@1x.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 580px;
+  }
 }
 .download__title-wrapper {
   background-image: url("../img/iphone-hand-1.png");
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: 50% 143%;
   min-height: 375px;
+  @media #{$tablet} {
+    background-image: none;
+    width: 100%;
+    float: left;
+    min-height: 100px;
+    padding-top: 55px;
+    padding-left: 85px;
+    margin-bottom: 20px;
+  }
+
 }
 .download__title {
   color: $color;
@@ -15,18 +31,30 @@
   font-size: $font--l;
   line-height: $line--l;
   font-weight: 300;
+  @media #{$tablet} {
+    font-size: $font--xxl;
+    line-height: 48px;
+    width: 30%;
+    margin: 0;
+  }
 }
 .download__container {
   background: $color__basic;
   padding-top: 25px;
   min-height: 245px;
-
+  @media #{$tablet} {
+    background: none;
+    width: 50%;
+    float: left;
+    min-height: 100px;
+    padding-top: 9px;
+    padding-left: 5px;
+  }
 }
 .download__btn {
     color: $color;
     display: block;
     cursor: pointer;
-    background: $color__basic;
     font-weight: bold;
     font-size: $font--m;
     width:275px;
@@ -44,6 +72,9 @@
   margin: auto;
   font-size: 0;
   margin-bottom: 10px;
+  @media #{$tablet} {
+    padding-top: 35px;
+  }
 }
 .download__link {
   display: inline-block;
@@ -53,14 +84,26 @@
   background-position: center;
   &--ios {
     background-image: url("../img/apple-logo.svg");
+      background-position: 50% 34%;
+    @media #{$tablet} {
+      background-position: 82% 38%;
+    }
   }
   &--android {
     background-image: url("../img/android-logo.svg");
+    @media #{$tablet} {
+      background-position: 75% 55%;
+    }
   }
   &--microsoft {
     background-image: url("../img/microsoft-logo.svg");
+    @media #{$tablet} {
+      background-position: 75% 55%;
+    }
   }
 }
+
+
 .download__text{
   color: $color;
   font-size: $font;
@@ -69,4 +112,8 @@
   text-align: center;
   width: 75%;
   margin: auto;
+  @media #{$tablet} {
+    font-size: $font--m;
+    width: 85%;
+  }
 }

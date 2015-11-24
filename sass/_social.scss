@@ -1,0 +1,30 @@
+.social {
+  width: 33%;
+  float: left;
+  padding-top: 37px;
+  padding-left: 28px;
+  box-sizing: border-box;
+
+}
+.social__link {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid #e9ebec;
+  margin-right: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  &:last-child {
+    margin-right: 0;
+  }
+  &--tw {
+    background-image: url("../img/twitter.svg");
+  }
+  &--fb {
+    background-image: url("../img/facebook.svg");
+  }
+  &--yt {
+    background-image: url("../img/youtube.svg");
+  }
+}

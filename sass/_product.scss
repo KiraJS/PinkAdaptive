@@ -2,6 +2,9 @@
   background: $color__primary;
   padding-top: 105px;
   min-height: 375px;
+  @media #{$tablet} {
+  display: none;
+}
 }
 .product__header {
   background-color: $color__additional;

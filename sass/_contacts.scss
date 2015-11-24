@@ -11,9 +11,23 @@
   text-align: center;
   font-size: $font--l;
   font-weight: 300;
+  @media #{$tablet} {
+    font-size: $font--xxl;
+    line-height: $line--xxl;
+    margin-bottom: 48px;
+  }
 }
 .contacts__wrapper {
   margin-bottom: 24px;
+  @media #{$tablet} {
+    width: 50%;
+    float: left;
+  }
+  &:last-child {
+    @media #{$tablet} {
+      width: 100%;
+    }
+  }
 }
 .contacts__subtitle {
   font-size: $font--m;

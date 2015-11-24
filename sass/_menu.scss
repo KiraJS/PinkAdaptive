@@ -1,4 +1,12 @@
 .menu {
+  width: 50%;
+  float: left;
+  padding-top: 20px;
+  @media #{$tablet} {
+    padding-top: 43px;
+  }
+}
+.menu__list {
   width: 100%;
   position: absolute;
   left: 0;
@@ -21,4 +29,16 @@
   height: 25px;
   color: $color;
   text-align: center;
+}
+.menu__enter {
+  display: inline-block;
+  width: 50px;
+  float: right;
+  height: 25px;
+  background-image: url("../img/menu-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  @media #{$tablet} {
+    margin-right: 20px;
+  }
 }

@@ -11,21 +11,22 @@ gulp.task('sass', function (){
     .pipe(notify('Done!'));
 })
 
-//default
-gulp.task('default', ['sass', 'watch', 'webserver'])
-
-
 //webserver
-gulp.task('webserver', function(){
+gulp.task('webserver', function() {
   gulp.src('')
     .pipe(webserver({
       livereload: true,
+      directoryListing: true,
       open: true,
-      port: 8031,
+      port: 8032,
     }));
-})
+});
 
 //watch
 gulp.task('watch', function () {
-  gulp.watch('sass/*.scss', ['default'])
+  gulp.watch('sass/*.scss', ['sass'])
 })
+
+
+//default
+gulp.task('default', ['sass', 'watch', 'webserver'])
