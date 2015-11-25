@@ -5,6 +5,11 @@
   @media #{$tablet} {
     padding-top: 43px;
   }
+  @media #{$desktop} {
+    width: 55%;
+    padding-top: 39px;
+
+  }
 }
 .menu__list {
   width: 100%;
@@ -13,11 +18,15 @@
   padding-top: 65px;
   display: none;
   background-color: $color__additional;
-}
-.menu__list {
   padding: 0;
   margin: 0;
   list-style: none;
+  @media #{$desktop} {
+    display: block;
+    position: relative;
+    font-size: 0;
+    background-color: transparent;
+  }
 }
 .menu__item {
   display: block;
@@ -29,6 +38,21 @@
   height: 25px;
   color: $color;
   text-align: center;
+  @media #{$desktop} {
+    float: left;
+    display: inline-block;
+    padding: 0;
+    font-weight: 400;
+    text-transform: none;
+    margin-left: 30px;
+    margin-right: 37px;
+  }
+  &:last-child {
+    @media #{$desktop} {
+      margin-right: 0;
+    }
+  }
+
 }
 .menu__enter {
   display: inline-block;
@@ -40,5 +64,8 @@
   background-position: 100% 50%;
   @media #{$tablet} {
     margin-right: 20px;
+  }
+  @media #{$desktop} {
+    display: none;
   }
 }

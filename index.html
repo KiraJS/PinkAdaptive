@@ -15,21 +15,23 @@
 
     <header class="header  clearfix">
         <div class="logo">
-          <img src="img/logo-1.svg" alt="Pink" width="80" height="25" class="logo__img"></img>
+          <div class="logo__wrapper  clearfix">
+            <img src="img/logo-1.svg" alt="Pink" width="80" height="25" class="logo__img"></img>
+          </div>
         </div>
         <nav class="menu">
           <a href="" class="menu__enter"></a>
-          <ul class="menu__list">
-            <li class="menu__item">информация
+          <ul class="menu__list  clearfix">
+            <li class="menu__item">Информация
               <a href=""></a>
             </li>
-            <li class="menu__item">возможности
+            <li class="menu__item">Блог
               <a href=""></a>
             </li>
-            <li class="menu__item">отзывы
+            <li class="menu__item  ">Отзывы
               <a href=""></a>
             </li>
-            <li class="menu__item">стоимость
+            <li class="menu__item  ">Конкурс
               <a href=""></a>
             </li>
           </ul>
@@ -40,17 +42,21 @@
     <main class="main">
 
       <div class="download  clearfix">
-        <div class="download__title-wrapper">
-          <h1 class="download__title">Взгляните на жизнь иначе!</h1>
-        </div>
-        <div class="download__container">
-          <a href="#" class="download__btn">Скачать приложение</a>
-          <div class="download__link-wrapper">
-            <a href="#" class="download__link  download__link--ios"></a>
-            <a href="#" class="download__link  download__link--android"></a>
-            <a href="#" class="download__link  download__link--microsoft"></a>
+        <div class="download__wrapper">
+          <div class="download__title-wrapper">
+            <h1 class="download__title">Взгляните на жизнь иначе!</h1>
           </div>
-          <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+        <div class="download__wrapper  clearfix">
+          <div class="download__container">
+            <a href="#" class="download__btn">Скачать приложение</a>
+            <div class="download__link-wrapper">
+              <a href="#" class="download__link  download__link--ios"></a>
+              <a href="#" class="download__link  download__link--android"></a>
+              <a href="#" class="download__link  download__link--microsoft"></a>
+            </div>
+            <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </div>
       <div class="features">
@@ -58,16 +64,16 @@
           <h2 class="features__title">Устали от серости мегаполиса?</h2>
           <h2 class="features__title">Нам есть что вам<br> предложить!</h2>
         </div>
-        <ul class="features__list clearfix">
-          <li class="features__item">
+        <ul class="features__list  clearfix">
+          <li class="features__item  features__item--mood">
             <h2 class="features__subtitle">Поднимает настроение</h2>
             <p class="features__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
           </li>
-          <li class="features__item">
+          <li class="features__item  features__item--world">
             <h2 class="features__subtitle">Меняет мир вокруг</h2>
             <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="features__item">
+          <li class="features__item  features__item--friends">
             <h2 class="features__subtitle">Заводит новых друзей</h2>
             <p class="features__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
@@ -75,13 +81,14 @@
       </div>
 
       <div class="research clearfix">
-        <div class="research__wrapper">
+        <div class="research__wrapper  research__wrapper--left">
           <div class="research__clock"><span>24</span></div>
         </div>
-        <div class="research__wrapper">
-
-          <h2 class="research__title">Эффект<br> на 24 часа!</h2>
-          <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <div class="research__wrapper  research__wrapper--right">
+          <div class="research__container  clearfix">
+            <h2 class="research__title">Эффект на&nbsp;24 часа!</h2>
+          </div>
+          <p class="research__text">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от использования приложения длится целые сутки!</p>
           <a href="#" class="research__link">Узнать больше об исследовании</a>
         </div>
       </div>
@@ -233,16 +240,22 @@
     </main>
 
     <footer class="footer clearfix">
-      <div class=" logo logo--footer">
+      <div class="logo logo--foo">
+        <div class="logo__wrapper  logo__wrapper--foo">
           <img src="img/logo-black.svg" alt="Pink" width="80" height="25" class="logo__img"></img>
+        </div>
       </div>
       <div class="social">
-        <a href="#" class="social__link  social__link--tw"></a>
-        <a href="#" class="social__link  social__link--fb"></a>
-        <a href="#" class="social__link  social__link--yt"></a>
+        <div class="social__wrapper">
+          <a href="#" class="social__link  social__link--tw"></a>
+          <a href="#" class="social__link  social__link--fb"></a>
+          <a href="#" class="social__link  social__link--yt"></a>
+        </div>
       </div>
-      <div class="copyright">
-        <span>Разработано</span>
+      <div class="copyright  clearfix">
+        <div class="copyright__wrapper">
+          <span>Разработано</span>
+        </div>
       </div>
     </footer>
 

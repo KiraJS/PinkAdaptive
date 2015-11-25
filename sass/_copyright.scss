@@ -2,14 +2,27 @@
   width: 33%;
   float: left;
   box-sizing: border-box;
-  padding-top: 52px;
+  padding-top: 42px;
   padding-bottom: 15px;
-  padding-left: 68px;
-  background-position: 84% 84%;
-  background-repeat: no-repeat;
-  background-image: url("../img/htmlacademy.svg");
+  padding-right: 20px;
 }
 .copyright span {
   font-weight: 400;
   display: inline-block;
+  width: 100%;
+  @media #{$desktop} {
+    font-size: $font--m;
+  }
+}
+.copyright__wrapper {
+  width: 142px;
+  float: right;
+  padding-top: 10px;
+  background-position: 90% 100%;
+  background-repeat: no-repeat;
+  background-image: url("../img/htmlacademy.svg");
+  @media #{$desktop} {
+      width: 162px;
+  }
+
 }

@@ -3,4 +3,9 @@
   @media #{$tablet} {
     display: block;
   }
+  @media #{$desktop} {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 40px;
+  }
 }

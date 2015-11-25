@@ -3,7 +3,14 @@
   padding-top: 45px;
   margin: 0;
   @media #{$tablet} {
-  padding-top:76px;  }
+  padding-top:76px;
+  }
+  @media #{$desktop} {
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 19%;
+    padding-top: 185px;
+  }
 }
 .review__list {
   background-image: linear-gradient(175deg, white 15%, white 88%, $color__primary 25%);
@@ -12,7 +19,6 @@
     background-image: none;
     height: 250px;
   }
-
 }
 .review__title{
   text-align: center;
@@ -35,6 +41,10 @@
     width: 95%;
     margin-bottom: 38px;
   }
+  @media #{$desktop} {
+      width: 65%;
+      margin-bottom: 38px;
+  }
 }
 .review__caption {
   display: none;
@@ -43,6 +53,11 @@
   text-align: center;
   @media #{$tablet} {
     display: block;
+  }
+  @media #{$desktop} {
+    font-size: $font--m;
+    line-height: $line--l;
+    font-weight: 400;
   }
 }
 .review__title--tablet {
@@ -55,5 +70,12 @@
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
+  }
+  @media #{$desktop} {
+    font-size: $font--l;
+    line-height: $line--l;
+    font-weight: 700;
+    margin-bottom: 5px;
+
   }
 }

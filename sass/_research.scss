@@ -1,8 +1,12 @@
 .research {
   display: none;
-  padding-top: 58px;
+  padding-top: 22px;
   @media #{$tablet} {
     display: block;
+  }
+  @media #{$desktop} {
+    background: #f2f2f2;
+    padding-bottom: 65px;
   }
 }
 .research__title {
@@ -12,13 +16,23 @@
  float: left;
  margin-top: 40px;
  margin-bottom: 10px;
- width: 100%
+ width: 48%;
+ @media #{$desktop} {
+   width: 100%;
+   margin-bottom: 25px;
+ }
 }
 .research__text {
   width: 100%;
   font-weight: 400;
   line-height: $line--m;
   margin-bottom: 33px;
+  @media #{$desktop} {
+    font-size: $font--m;
+    line-height: $line--l;
+    font-weight: 400;
+    width: 78%;
+  }
 }
 .research__clock span {
   position: absolute;
@@ -35,10 +49,32 @@
   border: 10px solid #d22856;
   border-radius: 50%;
   background-color: #eeeeee;
+  @media #{$desktop} {
+    font-size: 120px;
+    line-height: 205px;
+    top: 88px;
+    left: 139px;
+    border: 13px solid #d22856;
+    width: 220px;
+    height: 220px;
+  }
 }
 .research__wrapper {
   width: 50%;
   float: left;
+  box-sizing: border-box;
+  &--left {
+    @media #{$desktop} {
+      width: 40%;
+    }
+  }
+  &--right {
+    @media #{$desktop} {
+      width: 60%;
+      padding-top: 60px;
+      padding-left: 15px;
+    }
+  }
 }
 .research__clock {
   position: relative;
@@ -48,9 +84,22 @@
   background-repeat: no-repeat;
   background-position: 100% 100%;
   margin-left: 19px;
+  @media #{$desktop} {
+    width: 410px;
+    height: 360px;
+    background-image: url("../img/timer-3.svg");
+  }
 }
 .research__link {
   font-weight: 400;
   line-height: $line--m;
   color: $color__accent;
+  @media #{$desktop} {
+    font-size: $font--m;
+    line-height: $line--l;
+    font-weight: 400;
+  }
+}
+.research__container {
+  width: 100%;
 }

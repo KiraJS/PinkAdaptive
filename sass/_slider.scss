@@ -2,7 +2,6 @@
 .slider {
     width: 100%;
     margin: auto;
-    background: white;
 }
 #slide1:checked ~ .slider-inner .slider__wrapper {
     transform: translate(0);

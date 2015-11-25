@@ -3,18 +3,29 @@
   padding: 0 40px;
   padding-top: 92px;
   padding-bottom: 62px;
-  background-image: linear-gradient(175deg, white 8%, white 14%, #f2f2f2 0%);
+  background-image: linear-gradient(175deg, white 8%, white 20%, #f2f2f2 0%);
     @media #{$tablet} {
       display: block;
   }
+    @media #{$desktop} {
+      padding-top: 125px;
+    }
 }
 .table table {
   width: 100%;
+  @media #{$desktop} {
+    width: 84%;
+    margin: auto;
+  }
 }
 .table td {
   width: 25%;
   padding: 10px 15px 7px;
+  @media #{$desktop} {
+    padding: 19px 21px 12px;
+  }
 }
+
 .table__item {
   background-color: $color__additional;
   font-size: 16px;
@@ -28,12 +39,18 @@
     background-color: transparent;
     border: none;
   }
+  @media #{$desktop} {
+    font-size: 18px;
+  }
 }
 .table__item span {
   font-size: 18px;
   font-weight: 300;
   display: block;
   padding-top: 0;
+  @media #{$desktop} {
+    font-size: 24px;
+  }
 }
 .table__description {
   padding-left: 10px;
@@ -41,6 +58,10 @@
   font-size: $font;
   line-height: $line--l;
   border: solid 2px #e5e5e5;
+  @media #{$desktop} {
+    font-size: $font--m;
+    font-weight: 400;
+  }
 }
 .table__option {
   border: solid 2px #e5e5e5;

@@ -1,6 +1,9 @@
 .map {
   height: 200px;
   @media #{$tablet} {
-    height: 380px;
+    min-height: 380px;
+  }
+  @media #{$desktop} {
+    min-height: 465px;
   }
 }
