@@ -1,14 +1,22 @@
 .logo {
+  position: absolute;
+  z-index: 20;
   width: 50%;
-  float: left;
   padding-top: 20px;
+  @media #{$tablet} {
+    padding-top: 27px;
+  }
   @media #{$desktop} {
+    position: relative;
+    float: left;
     width: 45%;
   }
   &--foo {
     width: 33%;
-    padding-top: 27px;
+    position: relative;
+    float: left;
   }
+
 }
 
 .logo__wrapper {
@@ -24,7 +32,6 @@
     margin-left: 110px;
     background-image: url("../img/glasses-desktop.png");
     min-height: 25px;
-
   }
   &--foo {
       background-image: url("../img/glasses-pink.png");
