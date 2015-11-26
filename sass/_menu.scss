@@ -43,9 +43,9 @@
   font-weight: bold;
   padding: 17px 20px 23px 20px;
   height: 25px;
-  border: 1px solid black;
   margin-bottom: -1px;
-  @media #{$desktop} {
+  border: 1px solid black;
+  box-shadow: 0px 0px 1px rgba(255,255,255,0.3);  @media #{$desktop} {
     display: inline-block;
     padding: 0;
     margin-left: 30px;
@@ -57,6 +57,10 @@
       margin-right: 0;
     }
   }
+  @media #{$desktop} {
+    border: none;
+    box-shadow: none;
+  }
 }
 .menu__item a {
   text-transform: uppercase;
@@ -64,12 +68,27 @@
   line-height: 32px;
   color: $color;
   text-align: center;
-  display: block;
+  display: table;
   margin: auto;
   text-decoration: none;
+  &:hover {
+    color: $color__accent;
+  }
+  &:active {
+    opacity: 0.3;
+  }
   @media #{$desktop} {
     font-weight: 400;
     text-transform: none;
+    &:hover {
+      border-bottom: 2px solid white;
+      color: $color;
+
+    }
+    &:active {
+      opacity: 0.3;
+      border-bottom: none;
+    }
   }
 }
 .menu__enter {
@@ -81,6 +100,9 @@
     right: 17px;
     top: 20px;
     z-index: 20;
+    &:active {
+      opacity: 0.3;
+    }
   @media #{$tablet} {
     margin-right: 20px;
     top: 48px;
@@ -91,7 +113,13 @@
 }
 .menu__enter--show {
   background-image: url("../img/menu-burger.svg");
+  &:hover {
+    background-image: url("../img/menu-burger-hover.svg");
+  }
 }
 .menu__enter--close {
   background-image: url("../img/menu-cross.svg");
+  &:hover {
+    background-image: url("../img/menu-cross-hover.svg");
+  }
 }

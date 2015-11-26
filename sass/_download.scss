@@ -83,6 +83,13 @@
     padding: 12px 0 18px;
     border: solid white 4px;
     border-radius: 40px;
+    &:hover {
+      background: $color;
+      color: $color__accent;
+    }
+    &:active {
+      opacity: 0.3;
+    }
 }
 .download__link-wrapper {
   width: 240px;

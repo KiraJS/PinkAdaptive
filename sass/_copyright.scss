@@ -20,9 +20,11 @@
   padding-top: 10px;
   background-position: 90% 100%;
   background-repeat: no-repeat;
-  background-image: url("../img/htmlacademy.svg");
-  @media #{$desktop} {
-      width: 162px;
+  background-image: url(../img/htmlacademy.svg);
+  &:hover {
+    background-image: url(../img/htmlacademy-black.svg);
   }
-
+  @media #{$desktop} {
+    width: 162px;
+  }
 }

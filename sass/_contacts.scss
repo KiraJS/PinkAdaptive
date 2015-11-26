@@ -51,7 +51,7 @@
       width: 33%;
     }
   }
-  &:nth-child(2){
+  &:nth-child(2) {
     @media #{$desktop} {
       float: right;
       width: 34%;
@@ -72,12 +72,18 @@
   }
 }
 .contacts__text {
-  display: block;
+  display: table;
   font-size: $font--l;
   line-height: $line--l;
   color: $color__accent;
   text-align: center;
-  width: 80%;
   margin: auto;
   text-decoration: none;
+}
+a.contacts__text:hover {
+  color: $color__additional;
+  border-bottom: solid 2px $color__additional;
+}
+a.contacts__text:active {
+  opacity: 0.3;
 }

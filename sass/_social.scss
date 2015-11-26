@@ -3,7 +3,6 @@
   float: left;
   padding-top: 37px;
   box-sizing: border-box;
-
 }
 .social__link {
   display: inline-block;
@@ -18,13 +17,19 @@
     margin-right: 0;
   }
   &--tw {
-    background-image: url("../img/twitter.svg");
+    background-image: url(../img/twitter.svg);
   }
   &--fb {
-    background-image: url("../img/facebook.svg");
+    background-image: url(../img/facebook.svg);
   }
   &--yt {
-    background-image: url("../img/youtube.svg");
+    background-image: url(../img/youtube.svg);
+  }
+  &:hover {
+    border: 3px solid $color__additional;
+  }
+  &:active {
+    opacity: 0.3;
   }
 }
 .social__wrapper {

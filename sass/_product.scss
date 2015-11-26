@@ -3,9 +3,8 @@
   padding-top: 105px;
   min-height: 375px;
   @media #{$tablet} {
-  display: none;
-}
-
+    display: none;
+  }
 }
 .product__header {
   background-color: $color__additional;
@@ -40,15 +39,13 @@
 }
 .product__option {
   background: $color;
-
   border-bottom: 1px solid $color__primary--l;
-  background-image: url("../img/yes.svg");
+  background-image: url(../img/yes.svg);
   background-repeat: no-repeat;
   background-position: 86% 50%;
   &--no {
-    background-image: url("../img/no.svg");
-}
-
+    background-image: url(../img/no.svg);
+  }
 }
 .product__option span {
   padding-left: 20px;

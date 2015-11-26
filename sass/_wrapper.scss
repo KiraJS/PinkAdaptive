@@ -6,15 +6,15 @@
   }
 }
 .wrapper__bg {
-  background-image: url("../img/background-1@1x.jpg");
+  background-image: url(../img/background-1@1x.jpg);
   background-repeat: no-repeat;
   background-position: top;
   @media #{$tablet} {
-    background-image: url("../img/background-1@2x.jpg");
-  height: 729px;
+    background-image: url(../img/background-1@2x.jpg);
+    height: 729px;
   }
   @media #{$desktop} {
-    background-image: url("../img/background-1@2x.jpg");
-    height: 835px;  }
-
+    background-image: url(../img/background-1@2x.jpg);
+    height: 835px;
+  }
 }
